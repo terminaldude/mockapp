@@ -1,23 +1,24 @@
 //
-//  JBRViewController.m
+//  JBRWelcomeListController.m
 //  Prototype
 //
 //  Created by John Rowe on 24/03/2013.
 //  Copyright (c) 2013 John Rowe. All rights reserved.
 //
 
-#import "JBRViewController.h"
+#import "JBRWelcomeListController.h"
 
-@interface JBRViewController ()
+@interface JBRWelcomeListController ()
 
 @end
 
-@implementation JBRViewController
+@implementation JBRWelcomeListController
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+	
+  self.data = [[NSUserDefaults standardUserDefaults] valueForKeyPath:@"Welcome.List.Layout"];
 }
 
 - (void)didReceiveMemoryWarning

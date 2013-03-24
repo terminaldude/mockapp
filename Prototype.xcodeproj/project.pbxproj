@@ -18,12 +18,15 @@
 		9CBA176D16FF6F7C007C41BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA176C16FF6F7C007C41BF /* Default-568h@2x.png */; };
 		9CBA177016FF6F7C007C41BF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA176E16FF6F7C007C41BF /* MainStoryboard_iPhone.storyboard */; };
 		9CBA177316FF6F7C007C41BF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA177116FF6F7C007C41BF /* MainStoryboard_iPad.storyboard */; };
-		9CBA177616FF6F7C007C41BF /* JBRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA177516FF6F7C007C41BF /* JBRViewController.m */; };
 		9CBA177E16FF6F7C007C41BF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA177D16FF6F7C007C41BF /* SenTestingKit.framework */; };
 		9CBA177F16FF6F7C007C41BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA175616FF6F7C007C41BF /* UIKit.framework */; };
 		9CBA178016FF6F7C007C41BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBA175816FF6F7C007C41BF /* Foundation.framework */; };
 		9CBA178816FF6F7C007C41BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA178616FF6F7C007C41BF /* InfoPlist.strings */; };
 		9CBA178B16FF6F7C007C41BF /* PrototypeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA178A16FF6F7C007C41BF /* PrototypeTests.m */; };
+		9CBA179616FF6FE6007C41BF /* JBRArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA179516FF6FE6007C41BF /* JBRArrayTableViewController.m */; };
+		9CBA179816FF7033007C41BF /* Defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CBA179716FF7033007C41BF /* Defaults.plist */; };
+		9CBA179C16FF7143007C41BF /* JBRWelcomeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA179B16FF7143007C41BF /* JBRWelcomeListController.m */; };
+		9CBA179D16FF72C1007C41BF /* JBRArrayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA179516FF6FE6007C41BF /* JBRArrayTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,14 +55,17 @@
 		9CBA176C16FF6F7C007C41BF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9CBA176F16FF6F7C007C41BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		9CBA177216FF6F7C007C41BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		9CBA177416FF6F7C007C41BF /* JBRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JBRViewController.h; sourceTree = "<group>"; };
-		9CBA177516FF6F7C007C41BF /* JBRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JBRViewController.m; sourceTree = "<group>"; };
 		9CBA177C16FF6F7C007C41BF /* PrototypeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrototypeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CBA177D16FF6F7C007C41BF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9CBA178516FF6F7C007C41BF /* PrototypeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrototypeTests-Info.plist"; sourceTree = "<group>"; };
 		9CBA178716FF6F7C007C41BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9CBA178916FF6F7C007C41BF /* PrototypeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrototypeTests.h; sourceTree = "<group>"; };
 		9CBA178A16FF6F7C007C41BF /* PrototypeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrototypeTests.m; sourceTree = "<group>"; };
+		9CBA179416FF6FE6007C41BF /* JBRArrayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBRArrayTableViewController.h; sourceTree = "<group>"; };
+		9CBA179516FF6FE6007C41BF /* JBRArrayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBRArrayTableViewController.m; sourceTree = "<group>"; };
+		9CBA179716FF7033007C41BF /* Defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Defaults.plist; sourceTree = "<group>"; };
+		9CBA179A16FF7143007C41BF /* JBRWelcomeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBRWelcomeListController.h; sourceTree = "<group>"; };
+		9CBA179B16FF7143007C41BF /* JBRWelcomeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBRWelcomeListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +125,12 @@
 		9CBA175C16FF6F7C007C41BF /* Prototype */ = {
 			isa = PBXGroup;
 			children = (
-				9CBA176516FF6F7C007C41BF /* JBRAppDelegate.h */,
-				9CBA176616FF6F7C007C41BF /* JBRAppDelegate.m */,
+				9CBA179916FF703F007C41BF /* Base */,
+				9CBA179A16FF7143007C41BF /* JBRWelcomeListController.h */,
+				9CBA179B16FF7143007C41BF /* JBRWelcomeListController.m */,
 				9CBA176E16FF6F7C007C41BF /* MainStoryboard_iPhone.storyboard */,
 				9CBA177116FF6F7C007C41BF /* MainStoryboard_iPad.storyboard */,
-				9CBA177416FF6F7C007C41BF /* JBRViewController.h */,
-				9CBA177516FF6F7C007C41BF /* JBRViewController.m */,
+				9CBA179716FF7033007C41BF /* Defaults.plist */,
 				9CBA175D16FF6F7C007C41BF /* Supporting Files */,
 			);
 			path = Prototype;
@@ -161,6 +167,17 @@
 				9CBA178616FF6F7C007C41BF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CBA179916FF703F007C41BF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9CBA176516FF6F7C007C41BF /* JBRAppDelegate.h */,
+				9CBA176616FF6F7C007C41BF /* JBRAppDelegate.m */,
+				9CBA179416FF6FE6007C41BF /* JBRArrayTableViewController.h */,
+				9CBA179516FF6FE6007C41BF /* JBRArrayTableViewController.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +258,7 @@
 				9CBA176D16FF6F7C007C41BF /* Default-568h@2x.png in Resources */,
 				9CBA177016FF6F7C007C41BF /* MainStoryboard_iPhone.storyboard in Resources */,
 				9CBA177316FF6F7C007C41BF /* MainStoryboard_iPad.storyboard in Resources */,
+				9CBA179816FF7033007C41BF /* Defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +295,8 @@
 			files = (
 				9CBA176316FF6F7C007C41BF /* main.m in Sources */,
 				9CBA176716FF6F7C007C41BF /* JBRAppDelegate.m in Sources */,
-				9CBA177616FF6F7C007C41BF /* JBRViewController.m in Sources */,
+				9CBA179D16FF72C1007C41BF /* JBRArrayTableViewController.m in Sources */,
+				9CBA179C16FF7143007C41BF /* JBRWelcomeListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBA178B16FF6F7C007C41BF /* PrototypeTests.m in Sources */,
+				9CBA179616FF6FE6007C41BF /* JBRArrayTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

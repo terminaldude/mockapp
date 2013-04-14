@@ -18,7 +18,7 @@
 {
   [super viewDidLoad];
 	
-  self.data = [[NSUserDefaults standardUserDefaults] valueForKeyPath:@"Welcome.List.Layout"];
+  self.data = [[NSUserDefaults standardUserDefaults] valueForKeyPath:@"Welcome.ListLayout"];
 }
 
 - (void)didReceiveMemoryWarning

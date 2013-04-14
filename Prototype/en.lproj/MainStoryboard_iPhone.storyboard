@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YWn-iy-aSy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="YWn-iy-aSy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="1IB-ra-Wqs" kind="push" id="8GQ-Xz-CCi"/>
+                                    <segue destination="1IB-ra-Wqs" kind="push" id="8ji-8t-quu"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JBRWelcomeItemTwoCell" id="tcf-pn-Qzm">
@@ -37,6 +37,19 @@
                                     <segue destination="uzT-WT-H7A" kind="push" id="lO5-gh-M49"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JBRThree" id="fda-lI-btc">
+                                <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="KQT-79-ZaG" kind="push" id="Yda-sI-wWx"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Welcome" id="iNP-do-lls"/>
@@ -45,16 +58,31 @@
             </objects>
             <point key="canvasLocation" x="333" y="41"/>
         </scene>
-        <!--Table View Controller-->
+        <!--View Controller-->
+        <scene sceneID="a4X-zf-1o3">
+            <objects>
+                <viewController id="KQT-79-ZaG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyK-XR-Kcz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="87k-cC-6UR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeA-wi-Sza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="914" y="997"/>
+        </scene>
+        <!--Rowe View Controller-->
         <scene sceneID="4mh-Sy-viN">
             <objects>
-                <tableViewController id="uzT-WT-H7A" sceneMemberID="viewController">
+                <tableViewController id="uzT-WT-H7A" customClass="JBRRoweViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hBV-yh-Bex">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bpv-cF-3pd">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JBRRoweCell" id="bpv-cF-3pd" customClass="JBRRoweCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -121,6 +149,9 @@
     <classes>
         <class className="JBRArrayTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JBRArrayTableViewController.h"/>
+        </class>
+        <class className="JBRRoweViewController" superclassName="JBRArrayTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JBRRoweViewController.h"/>
         </class>
         <class className="JBRWelcomeListController" superclassName="JBRArrayTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JBRWelcomeListController.h"/>
